@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5170568376123753619}
-  - component: {fileID: 3962863713495565214}
   - component: {fileID: 7772710238278302259}
   - component: {fileID: 8610194117385980972}
+  - component: {fileID: 4298095469855755197}
   m_Layer: 0
-  m_Name: Dagger
+  m_Name: GreatSwordOfBoowomp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5372140854098638378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 3.3921914, y: -2.944471, z: -0.04417548}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34,26 +34,7 @@ Transform:
   - {fileID: 1658708090534168216}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3962863713495565214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5372140854098638378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9beb05059ee6f448097461c10e68f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  sr: {fileID: 0}
-  boxCollider: {fileID: 0}
-  canAttack: 1
-  attackDuration: 9000
-  attackRate: 4000
-  damage: 9001
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!61 &7772710238278302259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67,7 +48,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08017957, y: 0.002290845}
+  m_Offset: {x: 0.72242916, y: -0.0009175539}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -78,7 +59,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.47310615, y: 0.124898195}
+  m_Size: {x: 0.71083, y: 0.10564792}
   m_EdgeRadius: 0
 --- !u!50 &8610194117385980972
 Rigidbody2D:
@@ -101,6 +82,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &4298095469855755197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372140854098638378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc88d5ee6cddc74bb3de517ae247a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  sr: {fileID: 0}
+  boxCollider: {fileID: 0}
+  canAttack: 1
+  attackDuration: 2
+  attackRate: 120
+  damage: 500000
+  swingSpeed: 900
+  swingDeg: 90
 --- !u!1 &5692937350280975530
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,8 +128,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5692937350280975530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.04417548}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0.04417548}
+  m_LocalScale: {x: 0.18141527, y: 0.18141527, z: 0.18141527}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5170568376123753619}
@@ -174,7 +176,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7e17e2d3b3fab184db418e14f5130fb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9aff2e96c89f9241a33507fcfd8a9bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -297,7 +297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504766508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.387, y: -0.191, z: 0}
+  m_LocalPosition: {x: 0.459, y: -0.191, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -445,6 +445,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2000842149}
     m_Modifications:
+    - target: {fileID: 1648337309970120891, guid: 61e2a322fb0e61240ab9121d82c3eb62, type: 3}
+      propertyPath: spawnDelay
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2737388393745654465, guid: 61e2a322fb0e61240ab9121d82c3eb62, type: 3}
       propertyPath: m_Name
       value: Spawner (5)
@@ -606,7 +610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  defaultWeapon: {fileID: 3962863713495565214, guid: 56efa5e36d601af47934e7b3e8f25889, type: 3}
+  defaultWeapon: {fileID: 5306352875275441612, guid: 16cc37155f8cfaf4b8d2a47029c8de36, type: 3}
   equippedWeapon: {fileID: 0}
   weaponSlot: {fileID: 504766509}
 --- !u!58 &1148014235
