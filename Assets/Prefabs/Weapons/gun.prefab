@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3681547186016793126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.416, y: 0, z: 0}
+  m_LocalPosition: {x: 1.592, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0032868385, y: -0.003286779}
+  m_Offset: {x: 0.040497065, y: -0.003286779}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -111,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36236763, y: 0.112573266}
+  m_Size: {x: 0.3629501, y: 0.112573266}
   m_EdgeRadius: 0
 --- !u!114 &7267131517387693834
 MonoBehaviour:
@@ -130,10 +130,14 @@ MonoBehaviour:
   boxCollider: {fileID: 0}
   canAttack: 1
   attackDuration: 0.1
-  attackRate: 0
-  damage: 0
-  boolet: {fileID: 0}
-  muzzle: {fileID: 0}
+  attackRate: 300
+  damage: 10
+  boolet: {fileID: 5749653728312497723, guid: 85c782005ef42e34a99c4071dc53d4eb, type: 3}
+  muzzle: {fileID: 5565219553508292047}
+  baseAmmoCount: 12
+  ammoCount: 0
+  bulletDamage: 12
+  bulletSpeed: 200
 --- !u!1 &6149377516939377951
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6149377516939377951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000011921, y: 0, z: 0.04417548}
+  m_LocalPosition: {x: 0.0408, y: 0, z: 0.04417548}
   m_LocalScale: {x: 0.12496, y: 0.12496, z: 0.12496}
   m_ConstrainProportionsScale: 0
   m_Children:

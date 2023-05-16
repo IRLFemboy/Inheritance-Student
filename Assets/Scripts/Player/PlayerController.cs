@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 movement;
 
+    public int health;
+    public int maxHealth;
+
 
 
     void Start()
