@@ -14,6 +14,10 @@ public class Enemy : MonoBehaviour
     public int pointValue;
     public GameManager gm;
 
+    public GameObject[] pickupArray;
+    public float chance;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +76,11 @@ public class Enemy : MonoBehaviour
         gm.AddScore(pointValue);
         Destroy(gameObject);
     }
-    
-
+    private void OnDestroy()
+    {
+        if (Random.value < chance && pickupArray.Length > 0)
+        {
+            Instantiate(pickupArray[Random.Range(0, pickupArray.Length)], transform.position, transform.rotation);
+        }
+    }
 }

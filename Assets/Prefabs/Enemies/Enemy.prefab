@@ -140,6 +140,10 @@ MonoBehaviour:
   enemyCollider: {fileID: 0}
   pointValue: 20
   gm: {fileID: 0}
+  pickupArray:
+  - {fileID: 7713482362037141803, guid: 1679fb5678748d94194e12fb6730323a, type: 3}
+  - {fileID: 1984556806889962564, guid: 7c1b6c238a1a552418cb1be2f980189b, type: 3}
+  chance: 0.1
 --- !u!58 &257194312347319629
 CircleCollider2D:
   m_ObjectHideFlags: 0
