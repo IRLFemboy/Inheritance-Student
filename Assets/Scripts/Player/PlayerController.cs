@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float baseSpeed = 5f;
     public float moveSpeed = 5f;
     public Weapon defaultWeapon;
     public Weapon equippedWeapon;
